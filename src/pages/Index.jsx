@@ -4,7 +4,7 @@ import { FaHome, FaChartLine, FaGlobe, FaCommentDots, FaEllipsisH } from "react-
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={0}>
+    <Container maxW="container.xl" p={0} bg="background">
       {/* Navigation Bar */}
       <Flex as="nav" bg="gray.800" color="white" p={4} justifyContent="space-between" alignItems="center">
         <HStack spacing={8}>
@@ -39,7 +39,7 @@ const Index = () => {
       {/* Main Content */}
       <Flex direction={{ base: "column", md: "row" }} mt={4}>
         {/* Top News Section */}
-        <Box flex="3" p={4}>
+        <Box flex="3" p={4} bg="background">
           <Heading as="h2" size="lg" mb={4}>Top News</Heading>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
             <Box>
